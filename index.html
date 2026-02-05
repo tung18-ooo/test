@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đào Dương Du - Sinh viên Lập trình Web, Web Developer Portfolio">
+    <title>Đào Dương Du | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="bg-layer">
+        <div class="grid-pattern"></div>
+        <div class="gradient-orb gradient-orb-1"></div>
+        <div class="gradient-orb gradient-orb-2"></div>
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo magnetic-element">
+                <span class="logo-text">DU</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link magnetic-element">Giới thiệu</a>
+                <a href="#education" class="nav-link magnetic-element">Học vấn</a>
+                <a href="#skills" class="nav-link magnetic-element">Kỹ năng</a>
+                <a href="#projects" class="nav-link magnetic-element">Dự án</a>
+                <a href="#activities" class="nav-link magnetic-element">Hoạt động</a>
+                <a href="#contact" class="nav-link magnetic-element">Liên hệ</a>
+            </div>
+            <a href="#contact" class="nav-cta magnetic-btn">
+                <span class="btn-text">Liên hệ ngay</span>
+                <div class="btn-glow"></div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero" data-accent="cyan">
+        <div class="section-content">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="label-line"></span>
+                    <span class="text-reveal">Sinh viên Lập trình Web</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line"><span class="text-reveal word-reveal">Xin chào, tôi là</span></span>
+                    <span class="title-line"><span class="text-reveal word-reveal accent-text">Đào Dương
+                            Du</span></span>
+                </h1>
+                <p class="hero-description text-reveal">
+                    Sinh viên Công nghệ thông tin, định hướng Web Developer. Yêu thích xây dựng website, học hỏi công
+                    nghệ mới và ứng dụng AI vào công việc.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="primary-btn magnetic-btn">
+                        <span class="btn-text">📄 Xem CV</span>
+                        <div class="btn-ripple"></div>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="https://github.com/DU4502" target="_blank" class="secondary-btn magnetic-btn">
+                        <span class="btn-text">GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card tilt-card">
+                    <div class="card-shine"></div>
+                    <div class="card-content">
+                        <div class="card-icon">👨‍💻</div>
+                        <span class="card-stat">GPA 3.3</span>
+                        <span class="card-label">FPT Polytechnic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Cuộn để khám phá</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" data-accent="violet">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-number text-reveal">01</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Giới thiệu</span>
+                    <span class="text-reveal word-reveal accent-text">bản thân</span>
+                </h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="info-card tilt-card">
+                        <div class="card-shine"></div>
+                        <h3>Thông tin cá nhân</h3>
+                        <ul class="info-list">
+                            <li><span class="info-icon">👤</span> Họ tên: Đào Dương Du</li>
+                            <li><span class="info-icon">📍</span> Địa chỉ: Vạn Lộc, Thanh Hóa</li>
+                            <li><span class="info-icon">📧</span> Email: duongdudao2k2@gmail.com</li>
+                            <li><span class="info-icon">📱</span> SĐT: 0984430546</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-goals">
+                    <div class="goal-card tilt-card" data-delay="100">
+                        <div class="card-shine"></div>
+                        <h4>🎯 Mục tiêu ngắn hạn</h4>
+                        <p>Tham gia các dự án thực tế, nâng cao kỹ năng lập trình và hỗ trợ nhóm phát triển đạt tiến độ
+                            đề ra.</p>
+                    </div>
+                    <div class="goal-card tilt-card" data-delay="200">
+                        <div class="card-shine"></div>
+                        <h4>🚀 Mục tiêu dài hạn</h4>
+                        <p>Trở thành nhân sự nòng cốt, tham gia xây dựng và phát triển các hệ thống ổn định, bền vững.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education" data-accent="emerald">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-number text-reveal">02</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Học vấn</span>
+                </h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item tilt-card">
+                    <div class="card-shine"></div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Hiện tại</span>
+                        <h3>Cao đẳng FPT Polytechnic</h3>
+                        <p class="timeline-major">Chuyên ngành: Lập trình Web</p>
+                        <div class="gpa-badge">
+                            <span class="gpa-value">GPA: 3.3</span>
+                            <span class="gpa-max">/ 4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills" data-accent="amber">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-number text-reveal">03</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Kỹ năng</span>
+                    <span class="text-reveal word-reveal accent-text">chuyên môn</span>
+                </h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category tilt-card">
+                    <div class="card-shine"></div>
+                    <h3><span class="category-icon">🎨</span> Front-end</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category tilt-card">
+                    <div class="card-shine"></div>
+                    <h3><span class="category-icon">⚙️</span> Back-end</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP (MVC)</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category tilt-card">
+                    <div class="card-shine"></div>
+                    <h3><span class="category-icon">📝</span> CMS</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Chuẩn SEO</span>
+                    </div>
+                </div>
+                <div class="skill-category tilt-card">
+                    <div class="card-shine"></div>
+                    <h3><span class="category-icon">🎯</span> Design & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category tilt-card">
+                    <div class="card-shine"></div>
+                    <h3><span class="category-icon">💡</span> Kỹ năng mềm</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Làm việc nhóm</span>
+                        <span class="skill-tag">Giao tiếp</span>
+                        <span class="skill-tag">Ứng dụng AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects" data-accent="rose">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-number text-reveal">04</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Dự án</span>
+                    <span class="text-reveal word-reveal accent-text">tiêu biểu</span>
+                </h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card tilt-card">
+                    <div class="card-shine"></div>
+                    <div class="project-header">
+                        <span class="project-icon">🍹</span>
+                        <h3 class="project-title glitch-text" data-text="Chill Drink">Chill Drink</h3>
+                    </div>
+                    <p class="project-subtitle">Website bán hàng online</p>
+                    <span class="project-badge">Leader</span>
+                    <p class="project-description">Website bán hàng với các chức năng hiển thị sản phẩm, giỏ hàng, quản
+                        lý dữ liệu và CRUD cho Admin.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">PHP (MVC)</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </article>
+                <article class="project-card tilt-card">
+                    <div class="card-shine"></div>
+                    <div class="project-header">
+                        <span class="project-icon">🛒</span>
+                        <h3 class="project-title glitch-text" data-text="Mini Mart">Mini Mart</h3>
+                       <!-- // <span class="project-badge">Leader</span> -->
+                    </div>
+                    <p class="project-subtitle">Website bán hàng online</p>
+                    <p class="project-description">Website quản lý sản phẩm và dữ liệu hệ thống.</p>
+                    <div class="project-result">
+                        <span class="result-label">Kết quả:</span>
+                        <span class="result-score">8/10 điểm</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">PHP (MVC)</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section activities-section" id="activities" data-accent="violet">
+        <div class="section-content">
+            <div class="section-header">
+                <span class="section-number text-reveal">05</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Hoạt động &</span>
+                    <span class="text-reveal word-reveal accent-text">Thành tích</span>
+                </h2>
+            </div>
+            <div class="activities-timeline">
+                <div class="activity-item">
+                    <div class="activity-icon">👥</div>
+                    <div class="activity-content">
+                        <h4>Chủ nhiệm CLB Tình Nguyện</h4>
+                        <p>Điều hành và tổ chức các hoạt động thiện nguyện</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">🎯</div>
+                    <div class="activity-content">
+                        <h4>Leader dự án 1</h4>
+                        <p>Quản lý nhóm và phân công công việc hiệu quả</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">❤️</div>
+                    <div class="activity-content">
+                        <h4>Hiến máu tình nguyện</h4>
+                        <p>Tham gia các đợt hiến máu nhân đạo</p>
+                    </div>
+                </div>
+                <div class="activity-item achievement">
+                    <div class="activity-icon">🏆</div>
+                    <div class="activity-content">
+                        <h4>Sinh viên giỏi học kỳ Summer 2025</h4>
+                        <p>Đạt danh hiệu sinh viên giỏi</p>
+                    </div>
+                </div>
+                <div class="activity-item achievement">
+                    <div class="activity-icon">🥇</div>
+                    <div class="activity-content">
+                        <h4>Huy chương Vàng & Bạc</h4>
+                        <p>Giải võ Hào Khí Lam Sơn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" data-accent="cyan">
+        <div class="section-content">
+            <div class="section-header centered">
+                <span class="section-number text-reveal">06</span>
+                <h2 class="section-title">
+                    <span class="text-reveal word-reveal">Liên hệ</span>
+                    <span class="text-reveal word-reveal accent-text">với tôi</span>
+                </h2>
+                <p class="section-subtitle text-reveal">Hãy kết nối nếu bạn có cơ hội hợp tác hoặc cần trao đổi thêm!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:duongdudao2k2@gmail.com" class="contact-item magnetic-element">
+                        <span class="contact-icon">📧</span>
+                        <span>duongdudao2k2@gmail.com</span>
+                    </a>
+                    <a href="tel:0123456789" class="contact-item magnetic-element">
+                        <span class="contact-icon">📱</span>
+                        <span>0984430546</span>
+                    </a>
+                    <a href="https://github.com/DU4502" target="_blank" class="contact-item magnetic-element">
+                        <span class="contact-icon">💻</span>
+                        <span>github.com/DU4502</span>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Họ và tên</label>
+                        <span class="input-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                        <span class="input-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Nội dung</label>
+                        <span class="input-line"></span>
+                    </div>
+                    <button type="submit" class="submit-btn magnetic-btn">
+                        <span class="btn-text">Gửi tin nhắn</span>
+                        <span class="btn-icon">→</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span>© 2024 Đào Dương Du. Sinh viên lập trình web</span>
+            <a href="#hero" class="back-to-top magnetic-btn"><span>↑</span></a>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+
+
+</html>
